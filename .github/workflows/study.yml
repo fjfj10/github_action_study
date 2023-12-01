@@ -78,7 +78,7 @@ jobs:
         with:
           url: http://${{ env.STOPPED_IP }}:8081/env
           max-attempts: 3
-          retry-deley: 10s          
+          retry-delay: 10s          
 
       - name: Change nginx upstream
         uses: appleboy/ssh-action@master
